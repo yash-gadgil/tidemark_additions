@@ -2,5 +2,16 @@
   "creativetab.tidemark_additions.tidemark_additions": "Tidemark Additions",
   "item.tidemark_additions.tidescale": "Tidescale",
   "item.tidemark_additions.driftsteel": "Driftsteel",
-  "item.tidemark_additions.driftsteel_fragment": "Driftsteel Fragment"
+  "item.tidemark_additions.driftsteel_fragment": "Driftsteel Fragment",
+  "item.tidemark_additions.tidesteel_ingot": "Tidesteel Ingot",
+
+  "item.tidemark_additions.tidesteel_sword": "Tidesteel Sword",
+  "item.tidemark_additions.tidesteel_pickaxe": "Tidesteel Pickaxe",
+  "item.tidemark_additions.tidesteel_shovel": "Tidesteel Shovel",
+  "item.tidemark_additions.tidesteel_axe": "Tidesteel Axe",
+  "item.tidemark_additions.tidesteel_hoe": "Tidesteel Hoe",
+  "item.tidemark_additions.tidesteel_helmet": "Tidesteel Helmet",
+  "item.tidemark_additions.tidesteel_chestplate": "Tidesteel Chestplate",
+  "item.tidemark_additions.tidesteel_leggings": "Tidesteel Leggings",
+  "item.tidemark_additions.tidesteel_boots": "Tidesteel Boots"
 }

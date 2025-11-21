@@ -4,6 +4,7 @@ import com.jackydoge.tidemark_additions.Tidemark_additions;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
+import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -23,5 +24,9 @@ public class DataGenerators {
 
         generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput, lookupProvider));
         generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, existingFileHelper));
+
+        BlockTagsProvider blockTagsProvider = new ModBlockTagProvider(packOutput, lookupProvider, existingFileHelper);
+        generator.addProvider(event.includeServer(), blockTagsProvider);
+        generator.addProvider(event.includeServer(), new ModItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
     }
 }

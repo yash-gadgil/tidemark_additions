@@ -18,9 +18,21 @@ public class ModCreativeModeTabs {
                     .icon(() -> new ItemStack(ModItems.TIDESCALE.get()))
                     .title(Component.translatable("creativetab.tidemark_additions.tidemark_additions"))
                     .displayItems(((itemDisplayParameters, output) -> {
+
                         output.accept(ModItems.TIDESCALE.get());
                         output.accept(ModItems.DRIFTSTEEL.get());
                         output.accept(ModItems.DRIFTSTEEL_FRAGMENT.get());
+                        output.accept(ModItems.TIDESTEEL_INGOT.get());
+
+                        output.accept(ModItems.TIDESTEEL_SWORD.get());
+                        output.accept(ModItems.TIDESTEEL_PICKAXE.get());
+                        output.accept(ModItems.TIDESTEEL_SHOVEL.get());
+                        output.accept(ModItems.TIDESTEEL_AXE.get());
+                        output.accept(ModItems.TIDESTEEL_HOE.get());
+                        output.accept(ModItems.TIDESTEEL_HELMET.get());
+                        output.accept(ModItems.TIDESTEEL_CHESTPLATE.get());
+                        output.accept(ModItems.TIDESTEEL_LEGGINGS.get());
+                        output.accept(ModItems.TIDESTEEL_BOOTS.get());
                     }))
                     .build());
 
