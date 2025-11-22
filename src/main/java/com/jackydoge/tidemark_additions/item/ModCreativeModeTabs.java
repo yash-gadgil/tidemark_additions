@@ -46,6 +46,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ABYSSAL_RESONANCE_CHESTPLATE.get());
                         output.accept(ModItems.ABYSSAL_RESONANCE_LEGGINGS.get());
                         output.accept(ModItems.ABYSSAL_RESONANCE_BOOTS.get());
+
+                        output.accept(ModItems.TIDEHOPPER_SPAWN_EGG.get());
                     }))
                     .build());
 

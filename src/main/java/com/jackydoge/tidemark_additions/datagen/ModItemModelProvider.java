@@ -68,6 +68,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.ABYSSAL_RESONANCE_CHESTPLATE);
         trimmedArmorItem(ModItems.ABYSSAL_RESONANCE_LEGGINGS);
         trimmedArmorItem(ModItems.ABYSSAL_RESONANCE_BOOTS);
+
+        withExistingParent(ModItems.TIDEHOPPER_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
     private void handheldItem(RegistryObject<Item> item) {

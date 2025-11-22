@@ -1,8 +1,10 @@
 package com.jackydoge.tidemark_additions.item;
 
 import com.jackydoge.tidemark_additions.Tidemark_additions;
+import com.jackydoge.tidemark_additions.entity.ModEntities;
 import com.jackydoge.tidemark_additions.item.custom.ModArmorMaterials;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -89,6 +91,9 @@ public class ModItems {
     public static final RegistryObject<Item> ABYSSAL_RESONANCE_BOOTS = ITEMS.register("abyssal_resonance_boots",
             () -> new ArmorItem(ModArmorMaterials.ABYSSAL_RESONANCE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(20))));
+
+    public static final RegistryObject<Item> TIDEHOPPER_SPAWN_EGG = ITEMS.register("tidehopper_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.TIDEHOPPER, 0x010aba, 0x030cbe, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

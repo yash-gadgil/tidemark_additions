@@ -1,8 +1,11 @@
 package com.jackydoge.tidemark_additions;
 
+import com.jackydoge.tidemark_additions.entity.ModEntities;
+import com.jackydoge.tidemark_additions.entity.client.TidehopperRenderer;
 import com.jackydoge.tidemark_additions.item.ModCreativeModeTabs;
 import com.jackydoge.tidemark_additions.item.ModItems;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -37,6 +40,7 @@ public class Tidemark_additions {
 
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -67,6 +71,7 @@ public class Tidemark_additions {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
 
+            EntityRenderers.register(ModEntities.TIDEHOPPER.get(), TidehopperRenderer::new);
         }
     }
 }
