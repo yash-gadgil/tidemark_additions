@@ -33,6 +33,19 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.TIDESTEEL_CHESTPLATE.get());
                         output.accept(ModItems.TIDESTEEL_LEGGINGS.get());
                         output.accept(ModItems.TIDESTEEL_BOOTS.get());
+
+                        output.accept(ModItems.ABYSSAL_HIDE.get());
+                        output.accept(ModItems.ABYSSAL_RESONANCE_INGOT.get());
+
+                        output.accept(ModItems.ABYSSAL_RESONANCE_SWORD.get());
+                        output.accept(ModItems.ABYSSAL_RESONANCE_PICKAXE.get());
+                        output.accept(ModItems.ABYSSAL_RESONANCE_SHOVEL.get());
+                        output.accept(ModItems.ABYSSAL_RESONANCE_AXE.get());
+                        output.accept(ModItems.ABYSSAL_RESONANCE_HOE.get());
+                        output.accept(ModItems.ABYSSAL_RESONANCE_HELMET.get());
+                        output.accept(ModItems.ABYSSAL_RESONANCE_CHESTPLATE.get());
+                        output.accept(ModItems.ABYSSAL_RESONANCE_LEGGINGS.get());
+                        output.accept(ModItems.ABYSSAL_RESONANCE_BOOTS.get());
                     }))
                     .build());
 

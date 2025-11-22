@@ -3,6 +3,7 @@
   "item.tidemark_additions.tidescale": "Tidescale",
   "item.tidemark_additions.driftsteel": "Driftsteel",
   "item.tidemark_additions.driftsteel_fragment": "Driftsteel Fragment",
+
   "item.tidemark_additions.tidesteel_ingot": "Tidesteel Ingot",
 
   "item.tidemark_additions.tidesteel_sword": "Tidesteel Sword",
@@ -13,5 +14,20 @@
   "item.tidemark_additions.tidesteel_helmet": "Tidesteel Helmet",
   "item.tidemark_additions.tidesteel_chestplate": "Tidesteel Chestplate",
   "item.tidemark_additions.tidesteel_leggings": "Tidesteel Leggings",
-  "item.tidemark_additions.tidesteel_boots": "Tidesteel Boots"
+  "item.tidemark_additions.tidesteel_boots": "Tidesteel Boots",
+
+  "item.tidemark_additions.abyssal_resonance_ingot": "Abyssal Resonance Ingot",
+  "item.tidemark_additions.abyssal_hide": "Abyssal Hide",
+
+  "item.tidemark_additions.abyssal_resonance_sword": "Abyssal Resonance Sword",
+  "item.tidemark_additions.abyssal_resonance_pickaxe": "Abyssal Resonance Pickaxe",
+  "item.tidemark_additions.abyssal_resonance_shovel": "Abyssal Resonance Shovel",
+  "item.tidemark_additions.abyssal_resonance_axe": "Abyssal Resonance Axe",
+  "item.tidemark_additions.abyssal_resonance_hoe": "Abyssal Resonance Hoe",
+  "item.tidemark_additions.abyssal_resonance_helmet": "Abyssal Resonance Helmet",
+  "item.tidemark_additions.abyssal_resonance_chestplate": "Abyssal Resonance Chestplate",
+  "item.tidemark_additions.abyssal_resonance_leggings": "Abyssal Resonance Leggings",
+  "item.tidemark_additions.abyssal_resonance_boots": "Abyssal Resonance Boots",
+
+  "item.tidemark_additions.tidehopper_spawn_egg": "Tidehopper Spawn Egg"
 }
