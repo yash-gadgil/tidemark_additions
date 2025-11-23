@@ -22,7 +22,7 @@ public class ModArmorItem extends ArmorItem {
     private static final Map<Holder<ArmorMaterial>, List<MobEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<Holder<ArmorMaterial>, List<MobEffectInstance>>())
                     .put(ModArmorMaterials.ABYSSAL_RESONANCE_ARMOR_MATERIAL,
-                            List.of(new MobEffectInstance(ModEffects.RESONANCE.getHolder().orElseThrow(), 100, 1, false, false)))
+                            List.of(new MobEffectInstance(ModEffects.UNDERTIDE.getHolder().orElseThrow(), 100, 1, false, true, true)))
                     .build();
     @Override
     public void onInventoryTick(ItemStack stack, Level level, Player player, int slotIndex, int selectedIndex) {
@@ -43,13 +43,17 @@ public class ModArmorItem extends ArmorItem {
     }
 
     private void addEffectToPlayer(Player player, List<MobEffectInstance> mapEffect) {
-        boolean hasPlayerEffect = mapEffect.stream().allMatch(effect -> player.hasEffect(effect.getEffect()));
+        for (MobEffectInstance effect : mapEffect) {
+            MobEffectInstance apply = new MobEffectInstance(
+                    effect.getEffect(),
+                    effect.getDuration(),
+                    effect.getAmplifier(),
+                    effect.isAmbient(),
+                    true,
+                    true
+            );
 
-        if(!hasPlayerEffect) {
-            for (MobEffectInstance effect : mapEffect) {
-                player.addEffect(new MobEffectInstance(effect.getEffect(),
-                        effect.getDuration(), effect.getAmplifier(), effect.isAmbient(), effect.isVisible()));
-            }
+            player.addEffect(apply);
         }
     }
 
