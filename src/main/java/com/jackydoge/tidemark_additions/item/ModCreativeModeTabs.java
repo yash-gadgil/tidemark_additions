@@ -36,6 +36,7 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.ABYSSAL_HIDE.get());
                         output.accept(ModItems.ABYSSAL_RESONANCE_INGOT.get());
+                        output.accept(ModItems.RESONANT_SCALE.get());
 
                         output.accept(ModItems.ABYSSAL_RESONANCE_SWORD.get());
                         output.accept(ModItems.ABYSSAL_RESONANCE_PICKAXE.get());

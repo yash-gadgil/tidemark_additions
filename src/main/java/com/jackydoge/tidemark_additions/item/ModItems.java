@@ -2,6 +2,7 @@ package com.jackydoge.tidemark_additions.item;
 
 import com.jackydoge.tidemark_additions.Tidemark_additions;
 import com.jackydoge.tidemark_additions.entity.ModEntities;
+import com.jackydoge.tidemark_additions.item.custom.ModArmorItem;
 import com.jackydoge.tidemark_additions.item.custom.ModArmorMaterials;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
@@ -61,6 +62,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> ABYSSAL_RESONANCE_INGOT = ITEMS.register("abyssal_resonance_ingot",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RESONANT_SCALE = ITEMS.register("resonant_scale",
+            () -> new Item(new Item.Properties()));
 
 
     public static final RegistryObject<Item> ABYSSAL_RESONANCE_SWORD = ITEMS.register("abyssal_resonance_sword",
@@ -80,7 +83,7 @@ public class ModItems {
                     .attributes(HoeItem.createAttributes(ModToolTiers.ABYSSAL_RESONANCE, 0, -3.0f))));
 
     public static final RegistryObject<Item> ABYSSAL_RESONANCE_HELMET = ITEMS.register("abyssal_resonance_helmet",
-            () -> new ArmorItem(ModArmorMaterials.ABYSSAL_RESONANCE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+            () -> new ModArmorItem(ModArmorMaterials.ABYSSAL_RESONANCE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(20))));
     public static final RegistryObject<Item> ABYSSAL_RESONANCE_CHESTPLATE = ITEMS.register("abyssal_resonance_chestplate",
             () -> new ArmorItem(ModArmorMaterials.ABYSSAL_RESONANCE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,

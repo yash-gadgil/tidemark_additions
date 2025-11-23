@@ -1,9 +1,11 @@
 package com.jackydoge.tidemark_additions;
 
+import com.jackydoge.tidemark_additions.effect.ModEffects;
 import com.jackydoge.tidemark_additions.entity.ModEntities;
 import com.jackydoge.tidemark_additions.entity.client.TidehopperRenderer;
 import com.jackydoge.tidemark_additions.item.ModCreativeModeTabs;
 import com.jackydoge.tidemark_additions.item.ModItems;
+import com.jackydoge.tidemark_additions.loot_modifier.ModLootModifiers;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
@@ -41,6 +43,8 @@ public class Tidemark_additions {
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
+        ModEffects.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

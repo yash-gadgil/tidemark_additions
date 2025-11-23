@@ -4,6 +4,8 @@
   "item.tidemark_additions.driftsteel": "Driftsteel",
   "item.tidemark_additions.driftsteel_fragment": "Driftsteel Fragment",
 
+  "effect.tidemark_additions.resonance": "Resonance",
+
   "item.tidemark_additions.tidesteel_ingot": "Tidesteel Ingot",
 
   "item.tidemark_additions.tidesteel_sword": "Tidesteel Sword",
@@ -17,6 +19,7 @@
   "item.tidemark_additions.tidesteel_boots": "Tidesteel Boots",
 
   "item.tidemark_additions.abyssal_resonance_ingot": "Abyssal Resonance Ingot",
+  "item.tidemark_additions.resonant_scale": "Resonant Scale",
   "item.tidemark_additions.abyssal_hide": "Abyssal Hide",
 
   "item.tidemark_additions.abyssal_resonance_sword": "Abyssal Resonance Sword",

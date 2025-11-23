@@ -46,6 +46,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.TIDESTEEL_INGOT.get());
         basicItem(ModItems.ABYSSAL_HIDE.get());
         basicItem(ModItems.ABYSSAL_RESONANCE_INGOT.get());
+        basicItem(ModItems.RESONANT_SCALE.get());
 
         handheldItem(ModItems.TIDESTEEL_SWORD);
         handheldItem(ModItems.TIDESTEEL_PICKAXE);
