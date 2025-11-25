@@ -12,8 +12,8 @@ public class ModEffects {
 
     public static final DeferredRegister<MobEffect> EFFECTS = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, Tidemark_additions.MOD_ID);
 
-    public static final RegistryObject<MobEffect> UNDERTIDE = EFFECTS.register("undertide",
-            () -> new UndertideEffect(MobEffectCategory.BENEFICIAL, 0x8A00FF));
+    public static final RegistryObject<MobEffect> TIDEMARKED = EFFECTS.register("tidemarked",
+            () -> new TidemarkedEffect(MobEffectCategory.BENEFICIAL, 0x8A00FF));
 
     public static void register(IEventBus eventBus) {
         EFFECTS.register(eventBus);

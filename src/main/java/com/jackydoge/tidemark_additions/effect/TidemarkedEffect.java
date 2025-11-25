@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class UndertideEffect extends MobEffect {
+public class TidemarkedEffect extends MobEffect {
 
     private static final int STILL_DURATION_REQUIRED = 60; // 3 seconds
 
@@ -34,7 +34,7 @@ public class UndertideEffect extends MobEffect {
         }
     }
 
-    protected UndertideEffect(MobEffectCategory pCategory, int pColor) {
+    protected TidemarkedEffect(MobEffectCategory pCategory, int pColor) {
         super(pCategory, pColor);
     }
 

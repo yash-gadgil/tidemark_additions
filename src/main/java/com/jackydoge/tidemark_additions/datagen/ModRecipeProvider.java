@@ -120,91 +120,91 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.TIDESTEEL_INGOT.get()), has(ModItems.TIDESTEEL_INGOT.get()))
                 .save(recipeOutput);
         ///
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ABYSSAL_RESONANCE_INGOT.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TIDEMARKED_INGOT.get())
                 .pattern("AD")
                 .define('A', ModItems.ABYSSAL_HIDE.get())
                 .define('D', ModItems.DRIFTSTEEL.get())
                 .unlockedBy("has_driftsteel_and_tidescale", hasItems(ModItems.DRIFTSTEEL.get(), ModItems.ABYSSAL_HIDE.get()))
-                .save(recipeOutput, Tidemark_additions.MOD_ID + ":abyssal_resonance_ingot_from_abyssal_hide_driftsteel");
+                .save(recipeOutput, Tidemark_additions.MOD_ID + ":tidemarked_ingot_from_abyssal_hide_driftsteel");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ABYSSAL_RESONANCE_PICKAXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.TIDEMARKED_PICKAXE.get())
                 .pattern("AAA")
                 .pattern(" S ")
                 .pattern(" S ")
-                .define('A', ModItems.ABYSSAL_RESONANCE_INGOT.get())
+                .define('A', ModItems.TIDEMARKED_INGOT.get())
                 .define('S', ItemTags.create("forge", "rods/wooden"))
-                .unlockedBy(getHasName(ModItems.ABYSSAL_RESONANCE_INGOT.get()), has(ModItems.ABYSSAL_RESONANCE_INGOT.get()))
+                .unlockedBy(getHasName(ModItems.TIDEMARKED_INGOT.get()), has(ModItems.TIDEMARKED_INGOT.get()))
                 .unlockedBy(getHasName(Items.STICK), has(ItemTags.create("forge", "rods/wooden")))
                 .save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ABYSSAL_RESONANCE_AXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.TIDEMARKED_AXE.get())
                 .pattern("AA")
                 .pattern("AS")
                 .pattern(" S")
-                .define('A', ModItems.ABYSSAL_RESONANCE_INGOT.get())
+                .define('A', ModItems.TIDEMARKED_INGOT.get())
                 .define('S', ItemTags.create("forge", "rods/wooden"))
-                .unlockedBy(getHasName(ModItems.ABYSSAL_RESONANCE_INGOT.get()), has(ModItems.ABYSSAL_RESONANCE_INGOT.get()))
+                .unlockedBy(getHasName(ModItems.TIDEMARKED_INGOT.get()), has(ModItems.TIDEMARKED_INGOT.get()))
                 .unlockedBy(getHasName(Items.STICK), has(ItemTags.create("forge", "rods/wooden")))
                 .save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ABYSSAL_RESONANCE_SHOVEL.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.TIDEMARKED_SHOVEL.get())
                 .pattern("A")
                 .pattern("S")
                 .pattern("S")
-                .define('A', ModItems.ABYSSAL_RESONANCE_INGOT.get())
+                .define('A', ModItems.TIDEMARKED_INGOT.get())
                 .define('S', ItemTags.create("forge", "rods/wooden"))
-                .unlockedBy(getHasName(ModItems.ABYSSAL_RESONANCE_INGOT.get()), has(ModItems.ABYSSAL_RESONANCE_INGOT.get()))
+                .unlockedBy(getHasName(ModItems.TIDEMARKED_INGOT.get()), has(ModItems.TIDEMARKED_INGOT.get()))
                 .unlockedBy(getHasName(Items.STICK), has(ItemTags.create("forge", "rods/wooden")))
                 .save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.ABYSSAL_RESONANCE_HOE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.TIDEMARKED_HOE.get())
                 .pattern("AA")
                 .pattern(" S")
                 .pattern(" S")
-                .define('A', ModItems.ABYSSAL_RESONANCE_INGOT.get())
+                .define('A', ModItems.TIDEMARKED_INGOT.get())
                 .define('S', ItemTags.create("forge", "rods/wooden"))
-                .unlockedBy(getHasName(ModItems.ABYSSAL_RESONANCE_INGOT.get()), has(ModItems.ABYSSAL_RESONANCE_INGOT.get()))
+                .unlockedBy(getHasName(ModItems.TIDEMARKED_INGOT.get()), has(ModItems.TIDEMARKED_INGOT.get()))
                 .unlockedBy(getHasName(Items.STICK), has(ItemTags.create("forge", "rods/wooden")))
                 .save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.ABYSSAL_RESONANCE_SWORD.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.TIDEMARKED_SWORD.get())
                 .pattern("A")
                 .pattern("A")
                 .pattern("S")
-                .define('A', ModItems.ABYSSAL_RESONANCE_INGOT.get())
+                .define('A', ModItems.TIDEMARKED_INGOT.get())
                 .define('S', ItemTags.create("forge", "rods/wooden"))
-                .unlockedBy(getHasName(ModItems.ABYSSAL_RESONANCE_INGOT.get()), has(ModItems.ABYSSAL_RESONANCE_INGOT.get()))
+                .unlockedBy(getHasName(ModItems.TIDEMARKED_INGOT.get()), has(ModItems.TIDEMARKED_INGOT.get()))
                 .unlockedBy(getHasName(Items.STICK), has(ItemTags.create("forge", "rods/wooden")))
                 .save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.ABYSSAL_RESONANCE_HELMET.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.TIDEMARKED_HELMET.get())
                 .pattern("AAA")
                 .pattern("A A")
-                .define('A', ModItems.ABYSSAL_RESONANCE_INGOT.get())
-                .unlockedBy(getHasName(ModItems.ABYSSAL_RESONANCE_INGOT.get()), has(ModItems.ABYSSAL_RESONANCE_INGOT.get()))
+                .define('A', ModItems.TIDEMARKED_INGOT.get())
+                .unlockedBy(getHasName(ModItems.TIDEMARKED_INGOT.get()), has(ModItems.TIDEMARKED_INGOT.get()))
                 .save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.ABYSSAL_RESONANCE_CHESTPLATE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.TIDEMARKED_CHESTPLATE.get())
                 .pattern("A A")
                 .pattern("AAA")
                 .pattern("AAA")
-                .define('A', ModItems.ABYSSAL_RESONANCE_INGOT.get())
-                .unlockedBy(getHasName(ModItems.ABYSSAL_RESONANCE_INGOT.get()), has(ModItems.ABYSSAL_RESONANCE_INGOT.get()))
+                .define('A', ModItems.TIDEMARKED_INGOT.get())
+                .unlockedBy(getHasName(ModItems.TIDEMARKED_INGOT.get()), has(ModItems.TIDEMARKED_INGOT.get()))
                 .save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.ABYSSAL_RESONANCE_LEGGINGS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.TIDEMARKED_LEGGINGS.get())
                 .pattern("AAA")
                 .pattern("A A")
                 .pattern("A A")
-                .define('A', ModItems.ABYSSAL_RESONANCE_INGOT.get())
-                .unlockedBy(getHasName(ModItems.ABYSSAL_RESONANCE_INGOT.get()), has(ModItems.ABYSSAL_RESONANCE_INGOT.get()))
+                .define('A', ModItems.TIDEMARKED_INGOT.get())
+                .unlockedBy(getHasName(ModItems.TIDEMARKED_INGOT.get()), has(ModItems.TIDEMARKED_INGOT.get()))
                 .save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.ABYSSAL_RESONANCE_BOOTS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.TIDEMARKED_BOOTS.get())
                 .pattern("A A")
                 .pattern("A A")
-                .define('A', ModItems.ABYSSAL_RESONANCE_INGOT.get())
-                .unlockedBy(getHasName(ModItems.ABYSSAL_RESONANCE_INGOT.get()), has(ModItems.ABYSSAL_RESONANCE_INGOT.get()))
+                .define('A', ModItems.TIDEMARKED_INGOT.get())
+                .unlockedBy(getHasName(ModItems.TIDEMARKED_INGOT.get()), has(ModItems.TIDEMARKED_INGOT.get()))
                 .save(recipeOutput);
 
     }

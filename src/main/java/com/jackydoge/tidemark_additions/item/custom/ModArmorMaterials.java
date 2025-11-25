@@ -30,7 +30,7 @@ public class ModArmorMaterials {
                         attribute.put(ArmorItem.Type.BODY, 8);
                     }), 3, 0.2f, 0.1f, ModItems.TIDESTEEL_INGOT);
 
-    public static final Holder<ArmorMaterial> ABYSSAL_RESONANCE_ARMOR_MATERIAL = register("abyssal_resonance",
+    public static final Holder<ArmorMaterial> TIDEMARKED_ARMOR_MATERIAL = register("tidemarked",
             Util.make(new EnumMap<>(ArmorItem.Type.class),
                     attribute -> {
                         attribute.put(ArmorItem.Type.BOOTS, 2);
@@ -38,7 +38,7 @@ public class ModArmorMaterials {
                         attribute.put(ArmorItem.Type.CHESTPLATE, 6);
                         attribute.put(ArmorItem.Type.HELMET, 3);
                         attribute.put(ArmorItem.Type.BODY, 8);
-                    }), 3, 0.2f, 0.1f, ModItems.ABYSSAL_RESONANCE_INGOT);
+                    }), 3, 0.2f, 0.1f, ModItems.TIDEMARKED_INGOT);
 
     private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,
                                                   int enchantability, float toughness, float knockbackResistance,

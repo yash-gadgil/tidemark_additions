@@ -21,8 +21,8 @@ public class ModArmorItem extends ArmorItem {
 
     private static final Map<Holder<ArmorMaterial>, List<MobEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<Holder<ArmorMaterial>, List<MobEffectInstance>>())
-                    .put(ModArmorMaterials.ABYSSAL_RESONANCE_ARMOR_MATERIAL,
-                            List.of(new MobEffectInstance(ModEffects.UNDERTIDE.getHolder().orElseThrow(), 100, 1, false, true, true)))
+                    .put(ModArmorMaterials.TIDEMARKED_ARMOR_MATERIAL,
+                            List.of(new MobEffectInstance(ModEffects.TIDEMARKED.getHolder().orElseThrow(), 100, 1, false, true, true)))
                     .build();
     @Override
     public void onInventoryTick(ItemStack stack, Level level, Player player, int slotIndex, int selectedIndex) {

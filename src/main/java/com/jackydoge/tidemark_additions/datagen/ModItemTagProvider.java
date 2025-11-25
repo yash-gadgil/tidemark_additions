@@ -28,9 +28,9 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.TIDESTEEL_CHESTPLATE.get())
                 .add(ModItems.TIDESTEEL_LEGGINGS.get())
                 .add(ModItems.TIDESTEEL_BOOTS.get())
-                .add(ModItems.ABYSSAL_RESONANCE_HELMET.get())
-                .add(ModItems.ABYSSAL_RESONANCE_CHESTPLATE.get())
-                .add(ModItems.ABYSSAL_RESONANCE_LEGGINGS.get())
-                .add(ModItems.ABYSSAL_RESONANCE_BOOTS.get());
+                .add(ModItems.TIDEMARKED_HELMET.get())
+                .add(ModItems.TIDEMARKED_CHESTPLATE.get())
+                .add(ModItems.TIDEMARKED_LEGGINGS.get())
+                .add(ModItems.TIDEMARKED_BOOTS.get());
     }
 }

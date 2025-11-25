@@ -12,10 +12,10 @@ public class ModToolTiers {
             () -> Ingredient.of(ModItems.TIDESTEEL_INGOT.get()),
             ModTags.Blocks.INCORRECT_FOR_TIDESTEEL_TOOL);
 
-    public static final Tier ABYSSAL_RESONANCE = new ForgeTier(400, 6f, 2.5f, 5,
-            ModTags.Blocks.NEEDS_ABYSSAL_RESONANCE_TOOL,
-            () -> Ingredient.of(ModItems.ABYSSAL_RESONANCE_INGOT.get()),
-            ModTags.Blocks.INCORRECT_FOR_ABYSSAL_RESONANCE_TOOL);
+    public static final Tier TIDEMARKED = new ForgeTier(400, 6f, 2.5f, 5,
+            ModTags.Blocks.NEEDS_TIDEMARKED_TOOL,
+            () -> Ingredient.of(ModItems.TIDEMARKED_INGOT.get()),
+            ModTags.Blocks.INCORRECT_FOR_TIDEMARKED_TOOL);
 
 
 }

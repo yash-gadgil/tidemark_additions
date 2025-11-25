@@ -35,18 +35,18 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.TIDESTEEL_BOOTS.get());
 
                         output.accept(ModItems.ABYSSAL_HIDE.get());
-                        output.accept(ModItems.ABYSSAL_RESONANCE_INGOT.get());
+                        output.accept(ModItems.TIDEMARKED_INGOT.get());
                         output.accept(ModItems.RESONANT_SCALE.get());
 
-                        output.accept(ModItems.ABYSSAL_RESONANCE_SWORD.get());
-                        output.accept(ModItems.ABYSSAL_RESONANCE_PICKAXE.get());
-                        output.accept(ModItems.ABYSSAL_RESONANCE_SHOVEL.get());
-                        output.accept(ModItems.ABYSSAL_RESONANCE_AXE.get());
-                        output.accept(ModItems.ABYSSAL_RESONANCE_HOE.get());
-                        output.accept(ModItems.ABYSSAL_RESONANCE_HELMET.get());
-                        output.accept(ModItems.ABYSSAL_RESONANCE_CHESTPLATE.get());
-                        output.accept(ModItems.ABYSSAL_RESONANCE_LEGGINGS.get());
-                        output.accept(ModItems.ABYSSAL_RESONANCE_BOOTS.get());
+                        output.accept(ModItems.TIDEMARKED_SWORD.get());
+                        output.accept(ModItems.TIDEMARKED_PICKAXE.get());
+                        output.accept(ModItems.TIDEMARKED_SHOVEL.get());
+                        output.accept(ModItems.TIDEMARKED_AXE.get());
+                        output.accept(ModItems.TIDEMARKED_HOE.get());
+                        output.accept(ModItems.TIDEMARKED_HELMET.get());
+                        output.accept(ModItems.TIDEMARKED_CHESTPLATE.get());
+                        output.accept(ModItems.TIDEMARKED_LEGGINGS.get());
+                        output.accept(ModItems.TIDEMARKED_BOOTS.get());
 
                         output.accept(ModItems.TIDEHOPPER_SPAWN_EGG.get());
                     }))

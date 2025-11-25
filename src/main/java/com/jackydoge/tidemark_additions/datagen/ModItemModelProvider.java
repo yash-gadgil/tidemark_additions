@@ -45,7 +45,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.DRIFTSTEEL_FRAGMENT.get());
         basicItem(ModItems.TIDESTEEL_INGOT.get());
         basicItem(ModItems.ABYSSAL_HIDE.get());
-        basicItem(ModItems.ABYSSAL_RESONANCE_INGOT.get());
+        basicItem(ModItems.TIDEMARKED_INGOT.get());
         basicItem(ModItems.RESONANT_SCALE.get());
 
         handheldItem(ModItems.TIDESTEEL_SWORD);
@@ -54,21 +54,21 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.TIDESTEEL_AXE);
         handheldItem(ModItems.TIDESTEEL_HOE);
 
-        handheldItem(ModItems.ABYSSAL_RESONANCE_SWORD);
-        handheldItem(ModItems.ABYSSAL_RESONANCE_PICKAXE);
-        handheldItem(ModItems.ABYSSAL_RESONANCE_SHOVEL);
-        handheldItem(ModItems.ABYSSAL_RESONANCE_AXE);
-        handheldItem(ModItems.ABYSSAL_RESONANCE_HOE);
+        handheldItem(ModItems.TIDEMARKED_SWORD);
+        handheldItem(ModItems.TIDEMARKED_PICKAXE);
+        handheldItem(ModItems.TIDEMARKED_SHOVEL);
+        handheldItem(ModItems.TIDEMARKED_AXE);
+        handheldItem(ModItems.TIDEMARKED_HOE);
 
         trimmedArmorItem(ModItems.TIDESTEEL_HELMET);
         trimmedArmorItem(ModItems.TIDESTEEL_CHESTPLATE);
         trimmedArmorItem(ModItems.TIDESTEEL_LEGGINGS);
         trimmedArmorItem(ModItems.TIDESTEEL_BOOTS);
 
-        trimmedArmorItem(ModItems.ABYSSAL_RESONANCE_HELMET);
-        trimmedArmorItem(ModItems.ABYSSAL_RESONANCE_CHESTPLATE);
-        trimmedArmorItem(ModItems.ABYSSAL_RESONANCE_LEGGINGS);
-        trimmedArmorItem(ModItems.ABYSSAL_RESONANCE_BOOTS);
+        trimmedArmorItem(ModItems.TIDEMARKED_HELMET);
+        trimmedArmorItem(ModItems.TIDEMARKED_CHESTPLATE);
+        trimmedArmorItem(ModItems.TIDEMARKED_LEGGINGS);
+        trimmedArmorItem(ModItems.TIDEMARKED_BOOTS);
 
         withExistingParent(ModItems.TIDEHOPPER_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }

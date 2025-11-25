@@ -30,10 +30,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.INCORRECT_FOR_TIDESTEEL_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL);
 
-        tag(ModTags.Blocks.NEEDS_ABYSSAL_RESONANCE_TOOL)
+        tag(ModTags.Blocks.NEEDS_TIDEMARKED_TOOL)
                 .addTag(BlockTags.NEEDS_IRON_TOOL);
 
-        tag(ModTags.Blocks.INCORRECT_FOR_ABYSSAL_RESONANCE_TOOL)
+        tag(ModTags.Blocks.INCORRECT_FOR_TIDEMARKED_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL);
 
     }
