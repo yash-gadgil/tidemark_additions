@@ -26,9 +26,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(@NotNull RecipeOutput recipeOutput) {
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.DRIFTSTEEL.get())
-                .pattern("FFF")
-                .pattern("FFF")
-                .pattern("FFF")
+                .pattern("FF")
+                .pattern("FF")
                 .define('F', ModItems.DRIFTSTEEL_FRAGMENT.get())
                 .unlockedBy(getHasName(ModItems.DRIFTSTEEL_FRAGMENT.get()), has(ModItems.DRIFTSTEEL_FRAGMENT.get()))
                 .save(recipeOutput, Tidemark_additions.MOD_ID + ":driftsteel_from_fragments");
@@ -119,13 +118,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('T', ModItems.TIDESTEEL_INGOT.get())
                 .unlockedBy(getHasName(ModItems.TIDESTEEL_INGOT.get()), has(ModItems.TIDESTEEL_INGOT.get()))
                 .save(recipeOutput);
-        ///
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TIDEMARKED_INGOT.get())
-                .pattern("AD")
+                .pattern("TA")
+                .pattern("RD")
                 .define('A', ModItems.ABYSSAL_HIDE.get())
                 .define('D', ModItems.DRIFTSTEEL.get())
-                .unlockedBy("has_driftsteel_and_tidescale", hasItems(ModItems.DRIFTSTEEL.get(), ModItems.ABYSSAL_HIDE.get()))
-                .save(recipeOutput, Tidemark_additions.MOD_ID + ":tidemarked_ingot_from_abyssal_hide_driftsteel");
+                .define('T', ModItems.TIDESCALE.get())
+                .define('R', ModItems.RESONANT_SCALE.get())
+                .unlockedBy("has_driftsteel_abyssal_hide_resonant_scale_tidescale", hasItems(ModItems.DRIFTSTEEL.get(), ModItems.ABYSSAL_HIDE.get(), ModItems.TIDESCALE.get(), ModItems.RESONANT_SCALE.get()))
+                .save(recipeOutput, Tidemark_additions.MOD_ID + ":tidemarked_ingot_from_abyssal_hide_tidescale_resonant_scale_driftsteel");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.TIDEMARKED_PICKAXE.get())
                 .pattern("AAA")
