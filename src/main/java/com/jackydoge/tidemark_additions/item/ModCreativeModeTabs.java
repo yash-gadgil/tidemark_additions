@@ -48,7 +48,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.TIDEMARKED_LEGGINGS.get());
                         output.accept(ModItems.TIDEMARKED_BOOTS.get());
 
-                        output.accept(ModItems.TIDEHOPPER_SPAWN_EGG.get());
+                        output.accept(ModItems.TIDEFIN_SPAWN_EGG.get());
+                        output.accept(ModItems.ABYSSAL_RAY_SPAWN_EGG.get());
                     }))
                     .build());
 

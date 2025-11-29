@@ -70,7 +70,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.TIDEMARKED_LEGGINGS);
         trimmedArmorItem(ModItems.TIDEMARKED_BOOTS);
 
-        withExistingParent(ModItems.TIDEHOPPER_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.TIDEFIN_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.ABYSSAL_RAY_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
     private void handheldItem(RegistryObject<Item> item) {
