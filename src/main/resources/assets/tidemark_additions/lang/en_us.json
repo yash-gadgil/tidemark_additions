@@ -1,10 +1,12 @@
 {
   "creativetab.tidemark_additions.tidemark_additions": "Tidemark Additions",
+
+  "effect.tidemark_additions.tidemarked": "Tidemarked",
+  "effect.tidemark_additions.undertide": "Undertide",
+
   "item.tidemark_additions.tidescale": "Tidescale",
   "item.tidemark_additions.driftsteel": "Driftsteel",
   "item.tidemark_additions.driftsteel_fragment": "Driftsteel Fragment",
-
-  "effect.tidemark_additions.tidemarked": "Tidemarked",
 
   "item.tidemark_additions.tidesteel_ingot": "Tidesteel Ingot",
 
@@ -32,6 +34,19 @@
   "item.tidemark_additions.tidemarked_leggings": "Tidemarked Leggings",
   "item.tidemark_additions.tidemarked_boots": "Tidemarked Boots",
 
-  "entity.tidemark_additions.tidehopper": "Tidehopper",
-  "item.tidemark_additions.tidehopper_spawn_egg": "Tidehopper Spawn Egg"
+  "entity.tidemark_additions.tidefin": "Tidefin",
+  "item.tidemark_additions.tidefin_spawn_egg": "Tidefin Spawn Egg",
+
+  "entity.tidemark_additions.abyssal_ray": "Abyssal Ray",
+  "item.tidemark_additions.abyssal_ray_spawn_egg": "Abyssal Ray Spawn Egg",
+
+  "advancement.tidemark_additions.under_the_tides": "Under the Tides",
+  "advancement.tidemark_additions.under_the_tides.description": "Obtain any item from Tidemark Additions",
+  "advancement.tidemark_additions.resonant": "Resonant",
+  "advancement.tidemark_additions.resonant.description": "Obtain a Resonant Scale from a Warden",
+  "advancement.tidemark_additions.tide_forged": "Tide Forged",
+  "advancement.tidemark_additions.tide_forged.description": "Obtain a full set of Tidesteel Armor",
+  "advancement.tidemark_additions.tidemarked": "Tidemarked",
+  "advancement.tidemark_additions.tidemarked.description": "Obtain a full set of Tidemarked Armor"
+
 }
