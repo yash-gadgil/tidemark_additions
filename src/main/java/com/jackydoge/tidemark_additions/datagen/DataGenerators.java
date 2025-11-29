@@ -2,14 +2,18 @@ package com.jackydoge.tidemark_additions.datagen;
 
 import com.jackydoge.tidemark_additions.Tidemark_additions;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.BlockTagsProvider;
+import net.minecraftforge.common.data.DatapackBuiltinEntriesProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.ForgeRegistries;
 
+import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
 @Mod.EventBusSubscriber(modid = Tidemark_additions.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -29,5 +33,14 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(), blockTagsProvider);
         generator.addProvider(event.includeServer(), new ModItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
         generator.addProvider(event.includeServer(), new ModLootModifierProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new ModAdvancementProvider(packOutput, lookupProvider, existingFileHelper));
+
+        generator.addProvider(event.includeServer(), new DatapackBuiltinEntriesProvider(
+                packOutput, lookupProvider, new RegistrySetBuilder()
+                        .add(ForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifierProvider::bootstrap),
+                Set.of(Tidemark_additions.MOD_ID)
+        ));
     }
 }
+
+
