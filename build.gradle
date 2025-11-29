@@ -214,3 +214,11 @@ sourceSets.each {
     it.output.resourcesDir = dir
     it.java.destinationDirectory = dir
 }
+
+def mcVer = project.findProperty('minecraft_version') ?: project.findProperty('minecraftVersion') ?: 'unknown'
+def modId = project.findProperty('mod_id') ?: project.name
+def modVer = project.findProperty('mod_version') ?: project.version
+
+tasks.withType(Jar).configureEach {
+    archiveFileName.set("${modId}-${mcVer}-${modVer}.jar")
+}
