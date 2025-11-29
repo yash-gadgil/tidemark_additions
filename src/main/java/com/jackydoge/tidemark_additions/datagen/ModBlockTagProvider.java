@@ -20,21 +20,20 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
-        /*tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.LEAD_BLOCK.get())
-                .add(ModBlocks.LEAD_STONE_ORE.get());*/
 
         tag(ModTags.Blocks.NEEDS_TIDESTEEL_TOOL)
-                .addTag(BlockTags.NEEDS_IRON_TOOL);
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
 
         tag(ModTags.Blocks.INCORRECT_FOR_TIDESTEEL_TOOL)
-                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL);
+                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .remove(BlockTags.NEEDS_DIAMOND_TOOL);
 
         tag(ModTags.Blocks.NEEDS_TIDEMARKED_TOOL)
-                .addTag(BlockTags.NEEDS_IRON_TOOL);
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
 
         tag(ModTags.Blocks.INCORRECT_FOR_TIDEMARKED_TOOL)
-                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL);
+                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .remove(BlockTags.NEEDS_DIAMOND_TOOL);
 
     }
 }

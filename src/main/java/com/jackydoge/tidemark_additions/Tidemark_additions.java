@@ -2,7 +2,8 @@ package com.jackydoge.tidemark_additions;
 
 import com.jackydoge.tidemark_additions.effect.ModEffects;
 import com.jackydoge.tidemark_additions.entity.ModEntities;
-import com.jackydoge.tidemark_additions.entity.client.TidehopperRenderer;
+import com.jackydoge.tidemark_additions.entity.client.AbyssalRayRenderer;
+import com.jackydoge.tidemark_additions.entity.client.TidefinRenderer;
 import com.jackydoge.tidemark_additions.item.ModCreativeModeTabs;
 import com.jackydoge.tidemark_additions.item.ModItems;
 import com.jackydoge.tidemark_additions.loot_modifier.ModLootModifiers;
@@ -15,7 +16,6 @@ import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -49,8 +49,6 @@ public class Tidemark_additions {
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
-        // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
-        context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -75,7 +73,8 @@ public class Tidemark_additions {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
 
-            EntityRenderers.register(ModEntities.TIDEHOPPER.get(), TidehopperRenderer::new);
+            EntityRenderers.register(ModEntities.TIDEFIN.get(), TidefinRenderer::new);
+            EntityRenderers.register(ModEntities.ABYSSAL_RAY.get(), AbyssalRayRenderer::new);
         }
     }
 }

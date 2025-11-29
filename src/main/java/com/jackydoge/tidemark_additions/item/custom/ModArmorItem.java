@@ -23,7 +23,10 @@ public class ModArmorItem extends ArmorItem {
             (new ImmutableMap.Builder<Holder<ArmorMaterial>, List<MobEffectInstance>>())
                     .put(ModArmorMaterials.TIDEMARKED_ARMOR_MATERIAL,
                             List.of(new MobEffectInstance(ModEffects.TIDEMARKED.getHolder().orElseThrow(), 100, 1, false, true, true)))
+                    .put(ModArmorMaterials.TIDESTEEL_ARMOR_MATERIAL,
+                            List.of(new MobEffectInstance(ModEffects.UNDERTIDE.getHolder().orElseThrow(), 100, 1, false, true, true)))
                     .build();
+
     @Override
     public void onInventoryTick(ItemStack stack, Level level, Player player, int slotIndex, int selectedIndex) {
         if(!level.isClientSide() && hasFullSuitOfArmorOn(player)) {

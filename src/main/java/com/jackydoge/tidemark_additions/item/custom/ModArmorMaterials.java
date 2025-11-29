@@ -23,35 +23,33 @@ public class ModArmorMaterials {
     public static final Holder<ArmorMaterial> TIDESTEEL_ARMOR_MATERIAL = register("tidesteel",
             Util.make(new EnumMap<>(ArmorItem.Type.class),
                     attribute -> {
-                        attribute.put(ArmorItem.Type.BOOTS, 2);
-                        attribute.put(ArmorItem.Type.LEGGINGS, 4);
-                        attribute.put(ArmorItem.Type.CHESTPLATE, 6);
+                        attribute.put(ArmorItem.Type.BOOTS, 3);
+                        attribute.put(ArmorItem.Type.LEGGINGS, 6);
+                        attribute.put(ArmorItem.Type.CHESTPLATE, 8);
                         attribute.put(ArmorItem.Type.HELMET, 3);
-                        attribute.put(ArmorItem.Type.BODY, 8);
-                    }), 3, 0.2f, 0.1f, ModItems.TIDESTEEL_INGOT);
+                        attribute.put(ArmorItem.Type.BODY, 11);
+                    }), 15, 2.1f, 0.0f, ModItems.TIDESTEEL_INGOT, 38);
 
     public static final Holder<ArmorMaterial> TIDEMARKED_ARMOR_MATERIAL = register("tidemarked",
             Util.make(new EnumMap<>(ArmorItem.Type.class),
                     attribute -> {
                         attribute.put(ArmorItem.Type.BOOTS, 2);
-                        attribute.put(ArmorItem.Type.LEGGINGS, 4);
-                        attribute.put(ArmorItem.Type.CHESTPLATE, 6);
+                        attribute.put(ArmorItem.Type.LEGGINGS, 5);
+                        attribute.put(ArmorItem.Type.CHESTPLATE, 7);
                         attribute.put(ArmorItem.Type.HELMET, 3);
-                        attribute.put(ArmorItem.Type.BODY, 8);
-                    }), 3, 0.2f, 0.1f, ModItems.TIDEMARKED_INGOT);
+                        attribute.put(ArmorItem.Type.BODY, 10);
+                    }), 21, 2.5f, 0.08f, ModItems.TIDEMARKED_INGOT, 42);
 
     private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,
                                                   int enchantability, float toughness, float knockbackResistance,
-                                                  Supplier<Item> ingredientItem) {
+                                                  Supplier<Item> ingredientItem, int durabilityMultiplier) {
         ResourceLocation location = ResourceLocation.fromNamespaceAndPath(Tidemark_additions.MOD_ID, name);
         Holder<SoundEvent> equipSound = SoundEvents.ARMOR_EQUIP_NETHERITE;
         Supplier<Ingredient> ingredient = () -> Ingredient.of(ingredientItem.get());
-        List<ArmorMaterial.Layer> layers = List.of(new ArmorMaterial.Layer(location));
 
-        EnumMap<ArmorItem.Type, Integer> typeMap = new EnumMap<>(ArmorItem.Type.class);
-        for (ArmorItem.Type type : ArmorItem.Type.values()) {
-            typeMap.put(type, typeProtection.get(type));
-        }
+        List<ArmorMaterial.Layer> layers = List.of(
+            new ArmorMaterial.Layer(location, "", true)
+        );
 
         return Registry.registerForHolder(BuiltInRegistries.ARMOR_MATERIAL, location,
                 new ArmorMaterial(typeProtection, enchantability, equipSound, ingredient, layers, toughness, knockbackResistance));
