@@ -209,5 +209,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.TIDEMARKED_INGOT.get()), has(ModItems.TIDEMARKED_INGOT.get()))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RESONANT_SCALE.get())
+                .pattern("RA")
+                .pattern("AA")
+                .define('R', ModItems.RESONANT_SCALE.get())
+                .define('A', Items.NETHERITE_SCRAP)
+                .unlockedBy(getHasName(ModItems.RESONANT_SCALE.get()), has(ModItems.RESONANT_SCALE.get()))
+                .save(recipeOutput);
+
     }
 }

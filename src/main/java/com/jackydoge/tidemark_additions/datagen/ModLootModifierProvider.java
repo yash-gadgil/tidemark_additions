@@ -29,7 +29,7 @@ public class ModLootModifierProvider extends GlobalLootModifierProvider {
                 new Holder[]{},
                 ModItems.RESONANT_SCALE.get(),
                 3,
-                0.5f
+                1.0f
         ));
 
         add("tidefin_tidescale_drop", new EntityDropModifier(
@@ -59,6 +59,15 @@ public class ModLootModifierProvider extends GlobalLootModifierProvider {
                 0.6f
         ));
 
+        add("shipwreck_treasure_driftsteel", new AddItemToChestModifier(
+                new Holder[]{},
+                ResourceLocation.withDefaultNamespace("chests/shipwreck_treasure"),
+                ModItems.DRIFTSTEEL.get(),
+                7,
+                12,
+                0.6f
+        ));
+
         add("shipwreck_map_driftsteel_fragment", new AddItemToChestModifier(
                 new Holder[]{},
                 ResourceLocation.withDefaultNamespace("chests/shipwreck_map"),
@@ -74,6 +83,15 @@ public class ModLootModifierProvider extends GlobalLootModifierProvider {
                 ModItems.DRIFTSTEEL_FRAGMENT.get(),
                 1,
                 3,
+                0.4f
+        ));
+
+        add("shipwreck_supply_driftsteel", new AddItemToChestModifier(
+                new Holder[]{},
+                ResourceLocation.withDefaultNamespace("chests/shipwreck_supply"),
+                ModItems.DRIFTSTEEL.get(),
+                7,
+                10,
                 0.4f
         ));
 
@@ -99,9 +117,9 @@ public class ModLootModifierProvider extends GlobalLootModifierProvider {
                 new Holder[]{},
                 ResourceLocation.withDefaultNamespace("chests/buried_treasure"),
                 ModItems.DRIFTSTEEL.get(),
-                2,
-                5,
-                0.7f
+                16,
+                25,
+                1.0f
         ));
     }
 }
